@@ -6,16 +6,16 @@ import sys
 import os
 from os import path
 from dateutil import parser
-from google.colab import files
+# from google.colab import files
 import numpy as np
 import matplotlib.pyplot as plt
 import impliedVolatility as impvol
 
 def processDate(filterByMinutes):
-    instrumentsFile = path.join('/content/drive/My Drive/data/', 'instruments.csv')
-    marketDataFile = path.join('/content/drive/My Drive/data/', 'marketdata.csv')
-    #instrumentsFile = path.join(path.dirname(__file__), 'data', 'instruments.csv')
-    #marketDataFile = path.join(path.dirname(__file__), 'data', 'marketdata.csv')
+    # instrumentsFile = path.join('/content/drive/My Drive/data/', 'instruments.csv')
+    # marketDataFile = path.join('/content/drive/My Drive/data/', 'marketdata.csv')
+    instrumentsFile = path.join(path.dirname(__file__), 'data', 'instruments.csv')
+    marketDataFile = path.join(path.dirname(__file__), 'data', 'marketdata.csv')
     instrumentList = {}
     marketList = {}
     impliedVolatilites = {}
